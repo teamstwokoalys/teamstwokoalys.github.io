@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body, haader
+    {
+        font-family:lato;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 0;
+        margin-top: 30;        
+        padding:0;
+        background-color: white
+    }
+
+header
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;   
+        flex-wrap: wrap;
+    }
+
+.logo
+    {
+        height: 70px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+.menu-principal
+    {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        flex-grow: 1;
+        justify-content: flex-end;
+        padding-bottom: 10px;
+        padding-top: 10;
+    }
+
+.menu-principal button
+    {
+        background-color: #768E4F;
+        color: white;
+        border: none;
+        padding: 13px 24px;
+        cursor: pointer;
+        border-radius: 12px;
+        position: relative;
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+
+.menu-principal button:hover 
+    {
+        background-color: #FFD700;
+        color: white;
+        font-family: "Lato", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+
+.categoria
+    {
+        position: relative;
+    }
+
+.submenu    
+    {
+        display: none;
+        position: absolute;
+        top: 20%;
+        left: 0;
+        background-color:white ;
+        border: 1px solid #8f6033;
+        z-index: 1000;
+        min-width: 100px;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+
+.submenu h4
+    {
+        margin: 10px;
+        font-size: 14px;
+        border-bottom: 1px solid #8f6033;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color:#8f6033;
+    }
+
+.submenu a {
+        display: block;
+        padding: 5px 5px;
+        text-decoration: none;
+        color: #8f6033;
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+.submenu a:hover
+    {
+        background-color: #8f6033;
+        color: white;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        border-radius: 10px;
+    }
+
+.categoria:hover .submenu 
+    {
+        display: block;
+    }
+
+.nav-secundario 
+    {
+        background-color: #859c66;
+        padding: 10px 20px;
+        font-size: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 30px 30px 30px 30px;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+.nav-secundario a
+    {
+        text-decoration: none;
+        color: white;
+    }
+
+main 
+    {
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        text-align: center;
+        display: center;
+    }
+
+.formulario-contacto 
+    {
+        background-color: #e8e8e8;
+        padding: 2rem;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+form {
+        max-width: 600px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+label 
+    {
+        font-weight: bold;
+    }
+
+input, textarea 
+    {
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+.btn-enviar 
+    {
+        background-color: #768E4F;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+.btn-enviar:hover
+    {
+        background-color: #FFD700;
+        color: black;
+    }
+
+footer 
+    {
+        background-color: #8b5a2b;
+        color: white;
+        padding: 30px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+.footer-col 
+    {
+        flex: 1 1 200px;
+    }
+
+.footer-col input[type="email"] 
+    {
+        padding: 8px;
+        margin-top: 10px;
+        width: 100%;
+        max-width: 220px;
+    }
+
+.footer-col button
+    {
+        margin-top: 10px;
+        padding: 8px 12px;
+        background-color: #FFD700;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 340px){
+
+body,haader,mai,fooder
+    {
+        font-family:lato;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 0;
+        margin-top: 20;        
+        padding:0;
+        width: auto;
+        height: auto;
+    }
+ 
+header 
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        width: auto;
+        height: auto;
+    }
+    
+.logo
+    {
+    width: 200px;
+    height: auto
+    }
+
+.nav-principal 
+    {
+        justify-content: flex-start;
+        width: 10px;
+    }
+
+.nav-secundario
+    {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+footer 
+    {
+        flex-direction: column;
+    }
+
+.footer-col input[type="email"] 
+    {
+        width: 100%;
+    }
+] 

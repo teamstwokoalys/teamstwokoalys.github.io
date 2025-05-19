@@ -1,0 +1,99 @@
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="../CSS/style.css" type="text/css">
+    <style>
+        h2
+          {
+            padding-bottom: 20px;
+        padding-top: 20px;
+        text-align: center;
+          }
+    </style>  
+</head>
+
+<body>
+<header>
+  <img src="../Imagenes/marca/KOALYS_Mesa%20de%20trabajo%201.png" alt="Koalys Logo" class="logo">
+			<nav class="menu-principal">
+				<a href="../HTML/australia.html"><button>INICIO</button></a>
+				<div class="categoria">
+					<a><button>FLORA Y FAUNA ▼</button></a>
+					<div class="submenu">
+						<h4>ANIMALES</h4>
+						<a href="#">Wombat</a>
+						<a href="#">Canguro</a>
+						<a href="#">Ornitorrinco</a>
+						<a href="#">Koala</a>
+						<a href="#">Equidna</a>
+						<a href="#">Demonio de Tasmania</a>
+						<h4>PLANTAS</h4>
+						<a href="#">Acacia</a>
+						<a href="#">Eucalipto</a>
+						<a href="#">Proteáceas</a>
+						<a href="#">Gota de sangre</a>
+						<a href="#">Melaleuca</a>
+						<a href="#">Eremophila</a>
+					</div>
+				</div>
+				<a href="../HTML/contacto.html"><button>CONTACTO</button></a>
+				<a href="../HTML/souvenirs.html"><button>SOUVENIRS</button></a>
+			</nav>
+		</header>
+
+		<div class="nav-secundario">
+			<a href="../index.html">INICIO</a>
+			<a href="../HTML/australia.html">AUSTRALIA</a>
+			<a href="../HTML/">ANIMALES</a>
+			<a href="../HTML/">PLANTAS</a>
+			<a href="../HTML/contacto.html">CONTACTO</a>
+			<a href="../HTML/souvenirs.html">SOUVENIRS</a>
+		</div>
+ 
+
+<main>
+   <section class="formulario-contacto">
+      <h2 style="color: #9A582E;">AYÚDANOS A CONSERVAR LA FLORA Y LA FAUNA DE AUSTRALIA</h2>
+      <p>Australia sufre de incendios cada año en donde se pierde tanto flora como fauna y necesitamos voluntarios para ayudar a restaurar esto. Inscríbete al voluntariado para cuidar a los animales que han perdido su hogar y ayuda a plantar nueva vida.</p>
+      <p>En caso de ser menor de edad, pide ayuda a un adulto para que se inscriban juntos ya que no pueden acudir menores de edad sin un tutor.</p>
+
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+    <button type="submit" class="btn-enviar">Enviar</button>
+  </form>
+  </section>
+  
+  <section class="formulario-contacto" style="display:inline-block; align-items: center; gap: 10px; text-align: center; width: auto;">
+      <img src="../Imagenes/Souvenirs/telefono.png" alt="Teléfono" style="height: 30px;">
+      <p>Comunícate con nosotros si quieres saber más de Australia <br><strong style="color:#9A582E;">656-876-87-76</strong></p>
+    </section>
+ </main>
+
+<footer>
+  <div class="footer-col">
+    <p>&copy; 2025 Koalys.<br>Todos los derechos reservados</p>
+  </div>
+  <div class="footer-col">
+    <h4>Compañía</h4>
+    <p><a href="#">Sobre nosotros</a></p>
+    <p><a href="#">Contacto</a></p>
+    <p><a href="#">Souvenirs</a></p>
+  </div>
+  <div class="footer-col">
+    <h4>Mantente al día</h4>
+    <input type="email" placeholder="Tu dirección de correo">
+    <button>Enviar</button>
+  </div>
+</footer>
+
+</body>
+</html>
